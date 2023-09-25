@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lqda
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0049-tenant/ci10t-786-0049-app/devfile-sample-lqda@sha256:9c475a2c6aff548e591c1a1a95eb76b5fb97405c6c8509f61284677d4b4b6214
+        name: my-nodejs
+        resources: {}
+status: {}
